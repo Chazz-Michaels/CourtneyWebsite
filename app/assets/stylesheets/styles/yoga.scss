@@ -13,8 +13,6 @@
   margin: 0;
 }
 #yogaschedulebody{
-  max-height: 1080px;
-  max-width: 1920px;
   min-width: 480px;
   font-family: Verdana, sans-serif;
   margin: 0;
@@ -131,7 +129,7 @@
 @media only screen and (max-width: 1080px){
   /*----Formatting for Yoga Schedule page on mobile-----*/
   #yogaschedulebody {
-    position: absolute;
+    /*position: absolute;*/
   }
   .ycol {
     float: none;

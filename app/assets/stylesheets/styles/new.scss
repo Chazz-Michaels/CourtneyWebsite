@@ -1,0 +1,118 @@
+
+#new-body {
+  width: 100%;
+  min-width: 400px;
+}
+ #contactCol-Wrapper{
+
+ }
+ .contactCol {
+   display: block;
+   float: left;
+   width: 30%;
+   margin-top: 2%;
+ }
+ .ccLeft {
+   margin-left: 20%;
+ }
+ .ccRight {
+   width: 30%;
+   margin-right: 20%;
+   margin-top: 2%;
+   padding-left: 2%;
+ }
+
+ #courtbook{
+   width: 100%;
+ }
+
+
+
+@media only screen and (max-width: 700px) {
+  #new-body {
+    min-width: 480px;
+    position: absolute;
+  }
+
+  .contactCol {
+    float: none;
+    width: 30%;
+    margin:0;
+    margin-top: 2%;
+  }
+  .ccLeft {
+    margin-left: 30%;
+  }
+  .ccRight {
+    margin-left: 30%;
+  }
+}
+
+
+
+/*----------------------------------------*/
+ /* Formatting for Mailer Form */
+#mailer-form{
+  padding: 2%;
+  margin-left: 6%;
+}
+#contact-me-header{
+  margin-left: 0%;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  padding-bottom: 4%;
+}
+/*----------------------------------------*/
+.f-label-name{
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 25px;
+  margin-right: 2%;
+}
+.f-label-email{
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 25px;
+  margin-right: 2.5%;
+}
+.f-label-message{
+  vertical-align: top;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 25px;
+  margin-right: 3%;
+}
+/*----------------------------------------*/
+.f-input{
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  width: 70%;
+  height: 30px;
+  margin-top: 2%;
+}
+.f-input-message{
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  width: 62%;
+  height: 100px;
+  margin-top: 2%;
+}
+
+.hidden-form{
+  display: none;
+}
+
+.form-horizontal:required{
+  visibility: hidden;
+}
+.btn{
+  padding: 2%;
+  margin-left: 24%;
+  border-style: solid;
+  border-radius: 18px;
+  border-color: black;
+  border-width: 2px;
+  font-size: 22px;
+  background-color: #c6c6c6;
+}
+.btn:hover{
+  background-color: #8e8e8e;
+}

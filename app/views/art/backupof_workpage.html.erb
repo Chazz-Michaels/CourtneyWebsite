@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+
+<!-- THIS IS JUST A TEMPORARY BACKUP FILE IN CASE I MESS UP
+ THIS MONSTER PROJECT TO GET THE MODAL UP AND RUNNING WITH ALL
+ 62 IMAGES -->
+
+
+
+
+
+
+
+
+
+
+
+<head>
+  <meta charset="utf-8">
+  <title>Work</title>
+</head>
+
+<body id="work-body">
+<!--
+<div id="galleryWrapper">
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="/assets/artlanding2.jpg">
+        <img src="/assets/artlanding2.jpg" alt="Baltimore">
+      </a>
+      <div class="desc">Baltimore</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="/assets/art-cover-family.png">
+        <img src="/assets/art-cover-family.png" alt="Family">
+      </a>
+      <div class="desc">Family</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="/assets/art-cover-boston.png">
+        <img src="/assets/art-cover-boston.png" alt="Boston">
+      </a>
+      <div class="desc">Boston</div>
+    </div>
+  </div>
+
+  <div class="clearfix"></div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="/assets/art-cover-books.png">
+        <img src="/assets/art-cover-books.png" alt="Books">
+      </a>
+      <div class="desc">Books</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="/assets/art-cover-studies.png">
+        <img src="/assets/art-cover-studies.png" alt="Studies">
+      </a>
+      <div class="desc">Studies</div>
+    </div>
+  </div>
+
+  <div class="clearfix"></div>
+
+
+
+
+
+</div>
+
+-->
+
+
+<!-- Cover photos for each Art Work Category, this is what opens
+     when you navigate to Work page -->
+<div class="row">
+  <div class="column">
+    <img src="/assets/artlanding2.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="/assets/art-cover-family.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="/assets/art-cover-boston.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="/assets/art-cover-books.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="/assets/art-cover-studies.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<!-- When you click on one of the Work category images, the modal
+     opens. This code is each image, as appears when it is the
+     main pic viewed in the modal -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <img src="img_nature_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="img_fjords_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="img_mountains_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="img_lights_wide.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <!-- When you click on one of the Work category images, the modal
+         opens. This code is each image, as appears when it is one of
+         the small thumbnail pics at the bottom of the modal -->
+    <div class="column">
+      <img class="demo cursor" src="img_nature_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_fjords_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_lights_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+  </div>
+</div>
+
+<!-- The script that runs the modal properly -->
+<script>
+function openModal(){
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal(){
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n){
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n){
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n){
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++){
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++){
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+</body>
+</html>

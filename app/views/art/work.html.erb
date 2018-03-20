@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Work</title>
+</head>
+
+<body id="work-body">
+
+  <div class="containerForFooterPos">
+
+<!-- ==================================================================== -->
+<!-- Cover photos for each Art Work Category, this is what opens
+     when you navigate to Work page -->
+<div class="row">
+  <div class="maincolumn">
+    <img src="/assets/artlanding2.jpg" style="width:100%" onclick="openModalBaltimore();currentSlideBaltimore(1)" class="hover-shadow cursor">
+    <div class="desc">Baltimore</div>
+  </div>
+  <div class="maincolumn">
+    <img src="/assets/art-cover-family.png" style="width:100%" onclick="openModalFamily();currentSlideFamily(1)" class="hover-shadow cursor">
+    <div class="desc">Family</div>
+  </div>
+  <div class="maincolumn">
+    <img src="/assets/art-cover-boston.png" style="width:100%" onclick="openModalBoston();currentSlideBoston(1)" class="hover-shadow cursor">
+    <div class="desc">Boston</div>
+  </div>
+    <!-- clearfix class creates a clear and begins next content on new row -->
+    <div class="clearfix"></div>
+
+  <div class="maincolumn">
+    <img src="/assets/art-cover-books.png" style="width:100%" onclick="openModalBooks();currentSlideBooks(1)" class="hover-shadow cursor">
+    <div class="desc">Books</div>
+  </div>
+  <div class="maincolumn">
+    <img src="/assets/art-cover-studies.png" style="width:100%" onclick="openModalStudies();currentSlideStudies(1)" class="hover-shadow cursor">
+    <div class="desc">Studies</div>
+  </div>
+  <div class="maincolumn">
+    <img src="/assets/art-cover-bones.png" style="width:100%" onclick="openModalBones();currentSlideBones(1)" class="hover-shadow cursor">
+    <div class="desc">Muscles & Bones</div>
+  </div>
+</div>
+
+
+<!-- ==================================================================== -->
+<!-- When you click on one of the Work category images, its modal
+     opens -->
+
+<!-- ==================================================================== -->
+<!-- ===== BALTIMORE Modal ============================================== -->
+<!-- ==================================================================== -->
+<div id="myModalBaltimore" class="modal">
+
+  <div class="modal-content">
+    <span class="close cursor" onclick="closeModalBaltimore()">&times;</span>
+
+    <div class="prevnextwrapper">
+      <a class="prev" onclick="plusSlidesBaltimore(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlidesBaltimore(1)">&#10095;</a>
+    </div>
+
+<!-- Baltimore Gallery -->
+    <div class="mySlidesBaltimore">
+      <img src="/assets/baltimore/bal01.jpg">
+      <p class="caption">"Martin Luther King Blv" 2013 cut paper and oil on panel 6h x 6w in</p>
+    </div>
+
+    <div class="mySlidesBaltimore">
+      <img src="/assets/baltimore/bal02.jpg">
+      <p class="caption">"West Mount Royal Avenue" 2013 cut paper and oil on panel 6h x 6w in</p>
+    </div>
+
+    <div class="mySlidesBaltimore">
+      <img src="/assets/baltimore/bal03.jpg">
+      <p class="caption">"West Oliver Street" 2013 cut paper and oil on panel 6h x 6w in</p>
+    </div>
+
+    <div class="mySlidesBaltimore">
+      <img src="/assets/baltimore/bal04.jpg">
+      <p class="caption">"Mace Street" 2013 cut paper and oil on panel 6h x 6w in</p>
+    </div>
+
+    <div class="mySlidesBaltimore">
+      <img src="/assets/baltimore/bal05.jpg">
+      <p class="caption">"Maryland Avenue" 2013 cut paper and oil on panel 6h x 6w in</p>
+    </div>
+
+    <div class="mySlidesBaltimore">
+      <img src="/assets/baltimore/bal06.jpg">
+      <p class="caption">"Eutaw Place" 2013 cut paper and oil on panel 6h x 6w in</p>
+    </div>
+
+
+  <!-- Baltimore thumbnails at bottom of open Modal -->
+
+  <div class="rowDemoBaltimore">
+      <div class="column">
+        <img class="demo cursor" src="/assets/baltimore/bal01.jpg"  style="max-height:200px"  onclick="currentSlideBaltimore(1)" alt="01">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/baltimore/bal02.jpg"  style="max-height:200px"  onclick="currentSlideBaltimore(2)" alt="02">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/baltimore/bal03.jpg"  style="max-height:200px"  onclick="currentSlideBaltimore(3)" alt="03">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/baltimore/bal04.jpg"  style="max-height:200px"  onclick="currentSlideBaltimore(4)" alt="04">
+      </div>
+  </div>
+
+  <div class="rowDemoBaltimore">
+
+      <div class="column">
+        <img class="demo cursor" src="/assets/baltimore/bal05.jpg"  style="max-height:200px"  onclick="currentSlideBaltimore(5)" alt="05">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/baltimore/bal06.jpg"  style="max-height:200px"  onclick="currentSlideBaltimore(6)" alt="06">
+      </div>
+  </div>
+ 
+
+  </div>
+</div>
+
+<!-- ==================================================================== -->
+<!-- ===== FAMILY Modal ================================================= -->
+<!-- ==================================================================== -->
+<div id="myModalFamily" class="modal">
+
+  <div class="modal-content">
+    <span class="close cursor" onclick="closeModalFamily()">&times;</span>
+
+    <a class="prev" onclick="plusSlidesFamily(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlidesFamily(1)">&#10095;</a>
+
+<!-- Family Gallery -->
+    <div class="mySlidesFamily">
+      <img src="/assets/family/fam01.jpg">
+      <p class="caption">"Pink" 2017 oil on panel 8h x 8w in</p>
+    </div>
+
+    <div class="mySlidesFamily">
+      <img src="/assets/family/fam02demo.png">
+      <p class="caption">"Blake Wedding Portrait" 2017 oil on canvas 36h x 36w in</p>
+    </div>
+
+
+
+  <!-- Family thumbnails at bottom of open Modal -->
+    <div class="rowDemoFamily">
+      <div class="column">
+        <img class="demo cursor" src="/assets/family/fam01.jpg"  style="max-height:200px"  onclick="currentSlideFamily(1)" alt="01">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/family/fam02demo.png"  style="max-height:200px"  onclick="currentSlideFamily(2)" alt="02">
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+
+<!-- ==================================================================== -->
+<!-- ===== BOSTON Modal ================================================= -->
+<!-- ==================================================================== -->
+<div id="myModalBoston" class="modal">
+
+  <div class="modal-content">
+    <span class="close cursor" onclick="closeModalBoston()">&times;</span>
+
+    <a class="prev" onclick="plusSlidesBoston(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlidesBoston(1)">&#10095;</a>
+
+<!-- Boston Gallery -->
+    <div class="mySlidesBoston">
+      <img src="/assets/boston/bos01.jpg">
+      <p class="caption">"Claymoss #1" 2015 oil on canvas 6h x 6w in</p>
+    </div>
+
+    <div class="mySlidesBoston">
+      <img src="/assets/boston/bos02.jpg">
+      <p class="caption">"Claymoss #2" 2015 oil on canvas 6h x 6w in</p>
+    </div>
+
+    <div class="mySlidesBoston">
+      <img src="/assets/boston/bos09.jpg">
+      <p class="caption">"Island" 2015 oil on panel 8h x 8w in</p>
+    </div>
+
+    <div class="mySlidesBoston">
+      <img src="/assets/boston/bos10.jpg">
+      <p class="caption">"CFA" 2015 oil on panel 8h x 8w in</p>
+    </div>
+
+    <div class="mySlidesBoston">
+      <img src="/assets/boston/bos05.jpg">
+      <p class="caption">"Self-Portrait Pink" 2015 oil on panel 8h x 8w in</p>
+    </div>
+
+    <div class="mySlidesBoston">
+      <img src="/assets/boston/bos06.jpg">
+      <p class="caption">"Self-Portrait Orange" 2015 oil on panel 8h x 8w in</p>
+    </div>
+
+    <div class="mySlidesBoston">
+      <img src="/assets/boston/bos07.jpg">
+      <p class="caption">"Commonwealth Ave #1" 2015 oil on panel 24h x 24w in</p>
+    </div>
+
+    <div class="mySlidesBoston">
+      <img src="/assets/boston/bos08.jpg">
+      <p class="caption">"Commonwealth Ave #2" 2015 oil on panel 24h x 24w in</p>
+    </div>
+
+    <div class="mySlidesBoston">
+      <img src="/assets/boston/bos03.jpg">
+      <p class="caption">"Commonwealth Ave #1" in detail</p>
+    </div>
+
+    <div class="mySlidesBoston">
+      <img src="/assets/boston/bos04.jpg">
+      <p class="caption">"Commonwealth Ave #2" in detail</p>
+    </div>
+
+
+
+  <!-- Boston thumbnails at bottom of open Modal -->
+    <div class="rowDemoBoston">
+      <div class="column">
+        <img class="demo cursor" src="/assets/boston/bos01.jpg"  style="max-height:200px"  onclick="currentSlideBoston(1)" alt="01">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/boston/bos02.jpg"  style="max-height:200px"  onclick="currentSlideBoston(2)" alt="02">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/boston/bos09.jpg"  style="max-height:200px"  onclick="currentSlideBoston(3)" alt="03">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/boston/bos10.jpg"  style="max-height:200px"  onclick="currentSlideBoston(4)" alt="04">
+      </div>
+    </div>
+
+    <div class="rowDemoBoston">
+      <div class="column">
+        <img class="demo cursor" src="/assets/boston/bos05.jpg"  style="max-height:200px"  onclick="currentSlideBoston(5)" alt="05">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/boston/bos06.jpg"  style="max-height:200px"  onclick="currentSlideBoston(6)" alt="06">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/boston/bos07.jpg"  style="max-height:200px"  onclick="currentSlideBoston(7)" alt="07">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/boston/bos08.jpg"  style="max-height:200px"  onclick="currentSlideBoston(8)" alt="08">
+      </div>
+    </div>
+
+    <div class="rowDemoBoston">
+      <div class="column">
+        <img class="demo cursor" src="/assets/boston/bos04.jpg"  style="max-height:200px"  onclick="currentSlideBoston(9)" alt="09">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/boston/bos03.jpg"  style="max-height:200px"  onclick="currentSlideBoston(10)" alt="10">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ==================================================================== -->
+<!-- ===== BOOKS Modal ================================================== -->
+<!-- ==================================================================== -->
+<div id="myModalBooks" class="modal">
+
+  <div class="modal-content">
+    <span class="close cursor" onclick="closeModalBooks()">&times;</span>
+
+    <a class="prev" onclick="plusSlidesBooks(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlidesBooks(1)">&#10095;</a>
+
+<!-- Books Gallery -->
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk01.jpg">
+      <p class="caption">"Driving Book, page detail" 2014 mixed media: watercolor and pen and ink on paper and mylar 8h x 10w in</p>
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk02.jpg">
+      <p class="caption">"Driving Book, page detail" 2014 pen and ink on paper and on mylar 8h x 10w in</p>
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk03.jpg">
+      <p class="caption">"Driving Book, page detail" 2014 pen and ink on paper and on mylar 8h x 10w in</p>
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk04.jpg">
+      <p class="caption">"Driving Book, page detail" 2014 watercolor on paper and on mylar 8h x 10w in</p>
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk20.jpg">
+      <p class="caption">"Legs & Lace Book" 2014 pen and ink and fabric on paper 3.5h x 2.5w in</p>
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk19.jpeg">
+      <p class="caption">"Legs & Lace Book, page detail" 2014 pen and ink on paper 3.5h x 2.5w in</p>
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk06.jpg">
+      <p class="caption">"Legs & Lace Book, page detail" 2014 fabric on paper 3.5h x 2.5w in</p>
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk13.jpg">
+      <p class="caption">"Legs & Lace Book, page detail" 2014 pen and ink on paper 3.5h x 2.5w in</p>
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk08.jpg">
+      <p class="caption">"Legs & Lace Book, page detail" 2014 fabric on paper 3.5h x 2.5w in</p>
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk17.jpg">
+      <p class="caption">"Legs & Lace Book, page detail" 2014 pen and ink on paper 3.5h x 2.5w in</p>
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk15.jpg">
+      <p class="caption">"Legs & Lace Book, page detail" 2014 pen and ink on paper 3.5h x 2.5w in</p>
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk09.jpg">
+      <p class="caption">"Legs & Lace Book, page detail" 2014 fabric on paper 3.5h x 2.5w in</p>
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk16.jpg">
+      <p class="caption">"Legs & Lace Book, page detail" 2014 pen and ink on paper 3.5h x 2.5w in</p>
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk10.jpg">
+      <p class="caption">"Legs & Lace Book, page detail" 2014 fabric on paper 3.5h x 2.5w in</p>
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk18.jpg">
+      <p class="caption">"Legs & Lace Book, page detail" 2014 pen and ink on paper 3.5h x 2.5w in</p>
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk07.jpg">
+      <p class="caption">"Legs & Lace Book, page detail" 2014 fabric on paper 3.5h x 2.5w in</p>
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk12.jpg">
+      <p class="caption">"Legs & Lace Book, page detail" 2014 pen and ink on paper 3.5h x 2.5w in</p>
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk05.jpg">
+      <p class="caption">"Revere Peach, Ma" 2014 mixed-medium: wax-dipped paper, thread and ink 36h x 12w in, each</p>
+    </div>
+
+
+
+
+  <!-- Books thumbnails at bottom of open Modal -->
+  <div class="rowDemoBooks">
+      <div class="column">
+        <img class="demo cursor" src="/assets/books/bk01.jpg"  style="max-height:200px"  onclick="currentSlideBooks(1)" alt="01">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/books/bk02.jpg"  style="max-height:200px"  onclick="currentSlideBooks(2)" alt="02">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/books/bk03.jpg"  style="max-height:200px"  onclick="currentSlideBooks(3)" alt="03">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/books/bk04.jpg"  style="max-height:200px"  onclick="currentSlideBooks(4)" alt="04">
+      </div>
+  </div>
+
+  <div class="rowDemoBooks">
+      <div class="column">
+        <img class="demo cursor" src="/assets/books/bk20.jpg"  style="max-height:200px"  onclick="currentSlideBooks(5)" alt="05">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/books/bk19.jpeg"  style="max-height:200px"  onclick="currentSlideBooks(6)" alt="06">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/books/bk06.jpg"  style="max-height:200px"  onclick="currentSlideBooks(7)" alt="07">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/books/bk13.jpg"  style="max-height:200px"  onclick="currentSlideBooks(8)" alt="08">
+      </div>
+  </div>
+
+  <div class="rowDemoBooks">
+      <div class="column">
+        <img class="demo cursor" src="/assets/books/bk08.jpg"  style="max-height:200px"  onclick="currentSlideBooks(9)" alt="09">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/books/bk17.jpg"  style="max-height:200px"  onclick="currentSlideBooks(10)" alt="10">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/books/bk15.jpg"  style="max-height:200px"  onclick="currentSlideBooks(11)" alt="11">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/books/bk09.jpg"  style="max-height:200px"  onclick="currentSlideBooks(12)" alt="12">
+      </div>
+  </div>
+
+  <div class="rowDemoBooks">
+      <div class="column">
+        <img class="demo cursor" src="/assets/books/bk16.jpg"  style="max-height:200px"  onclick="currentSlideBooks(13)" alt="13">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/books/bk10.jpg"  style="max-height:200px"  onclick="currentSlideBooks(14)" alt="14">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/books/bk18.jpg"  style="max-height:200px"  onclick="currentSlideBooks(15)" alt="15">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/books/bk07.jpg"  style="max-height:200px"  onclick="currentSlideBooks(16)" alt="16">
+      </div>
+  </div>
+
+  <div class="rowDemoBooks">
+      <div class="column">
+        <img class="demo cursor" src="/assets/books/bk12.jpg"  style="max-height:200px"  onclick="currentSlideBooks(17)" alt="17">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/books/bk05.jpg"  style="max-height:200px"  onclick="currentSlideBooks(18)" alt="18">
+      </div>
+  </div>
+
+  </div>
+</div>
+
+<!-- ==================================================================== -->
+<!-- ===== STUDIES Modal ================================================ -->
+<!-- ==================================================================== -->
+<div id="myModalStudies" class="modal">
+
+  <div class="modal-content">
+    <span class="close cursor" onclick="closeModalStudies()">&times;</span>
+
+    <a class="prev" onclick="plusSlidesStudies(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlidesStudies(1)">&#10095;</a>
+
+<!-- Studies Gallery -->
+      <div class="mySlidesStudies">
+        <img src="/assets/studies/s01.jpg">
+        <p class="caption">"Abbey" 2014 thread and fabric 8h x 8w in</p>
+      </div>
+
+      <div class="mySlidesStudies">
+        <img src="/assets/studies/s02.jpg">
+        <p class="caption">"Self-Portrait of a Sea Captain" 2014 thread and fabric 8h x 8w in</p>
+      </div>
+
+      <div class="mySlidesStudies">
+        <img src="/assets/studies/s03.jpg">
+        <p class="caption">"Diana" 2014 thread and fabric 6h x 6w in</p>
+      </div>
+
+      <div class="mySlidesStudies">
+        <img src="/assets/studies/s04.jpg">
+        <p class="caption">"Lemondrop Moonshine" 2015 oil on panel 8h x 8w in</p>
+      </div>
+
+      <div class="mySlidesStudies">
+        <img src="/assets/studies/s05.png">
+        <p class="caption">"Street Study" 2014 watercolor on paper 5h x 7w in</p>
+      </div>
+
+      <div class="mySlidesStudies">
+        <img src="/assets/studies/s06.png">
+        <p class="caption">"Street Study Red" 2014 watercolor on paper 5h x 7w in</p>
+      </div>
+
+      <div class="mySlidesStudies">
+        <img src="/assets/studies/gym/g01.jpeg">
+        <p class="caption">"Invisible Made Visible: Blind Takeoff" 2013 oil on feaux swede 5h x 8w in</p>
+      </div>
+
+      <div class="mySlidesStudies">
+        <img src="/assets/studies/gym/g02.jpg">
+        <p class="caption">"Invisible Made Visible: Blind Landing" 2013 oil on feaux swede 5h x 8w in</p>
+      </div>
+
+      <div class="mySlidesStudies">
+        <img src="/assets/studies/gym/g03.jpg">
+        <p class="caption">"Invisible Made Visible: Blind Catch" 2013 oil on feaux swede 5h x 8w in</p>
+      </div>
+
+
+    <!-- Studies thumbnails at bottom of open Modal -->
+    <div class="rowDemoStudies">
+        <div class="column">
+          <img class="demo cursor" src="/assets/studies/s01.jpg" onclick="currentSlideStudies(1)" alt="01">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="/assets/studies/s02.jpg" onclick="currentSlideStudies(2)" alt="02">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="/assets/studies/s03.jpg" onclick="currentSlideStudies(3)" alt="03">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="/assets/studies/s04.jpg" onclick="currentSlideStudies(4)" alt="04">
+        </div>
+    </div>
+
+    <div class="rowDemoStudies">
+        <div class="column">
+          <img class="demo cursor" src="/assets/studies/s05.png" onclick="currentSlideStudies(5)" alt="05">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="/assets/studies/s06.png" onclick="currentSlideStudies(6)" alt="06">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="/assets/studies/gym/g01.jpg" onclick="currentSlideStudies(7)" alt="07">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="/assets/studies/gym/g02.jpg" onclick="currentSlideStudies(8)" alt="08">
+        </div>
+    </div>
+
+    <div class="rowDemoStudies">
+        <div class="column">
+          <img class="demo cursor" src="/assets/studies/gym/g03.jpg" onclick="currentSlideStudies(9)" alt="09">
+        </div>
+    </div>
+
+
+
+  </div>
+</div>
+
+
+
+<!-- ==================================================================== -->
+<!-- ===== Bones and Muscles Modal ====================================== -->
+<!-- ==================================================================== -->
+<div id="myModalBones" class="modal">
+
+  <div class="modal-content">
+    <span class="close cursor" onclick="closeModalBones()">&times;</span>
+
+    <a class="prev" onclick="plusSlidesBones(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlidesBones(1)">&#10095;</a>
+
+<!-- Bones and Muscles Gallery -->
+    <div class="mySlidesBones">
+      <img src="/assets/bones/b01.jpg">
+      <p class="caption">"Muscles of Torso" 2013 charcoal on toned paper 18h x 24w in</p>
+    </div>
+    <div class="mySlidesBones">
+      <img src="/assets/bones/b02.jpg">
+      <p class="caption">"Muscles of Torso" 2013 charcoal on toned paper 18h x 24w in</p>
+    </div>
+    <div class="mySlidesBones">
+      <img src="/assets/bones/b03.jpg">
+      <p class="caption">"Muscles of Arm" 2013 charcoal on toned paper 18h x 24w in</p>
+    </div>
+    <div class="mySlidesBones">
+      <img src="/assets/bones/b04.jpg">
+      <p class="caption">"Bones of Arm" 2013 charcoal on toned paper 18h x 24w in</p>
+    </div>
+    <div class="mySlidesBones">
+      <img src="/assets/bones/b05.jpg">
+      <p class="caption">"Bones" 2013 charcoal on toned paper 18h x 24w in</p>
+    </div>
+    <div class="mySlidesBones">
+      <img src="/assets/bones/b06.jpg">
+      <p class="caption">"Muscles of Leg" 2013 charcoal on toned paper 18h x 24w in</p>
+    </div>
+    <div class="mySlidesBones">
+      <img src="/assets/bones/b07.jpg">
+      <p class="caption">"Bones of Leg" 2013 charcoal on toned paper 18h x 24w in</p>
+    </div>
+    <div class="mySlidesBones">
+      <img src="/assets/bones/b08.jpg">
+      <p class="caption">"Pelvis" 2013 charcoal on toned paper 18h x 24w in</p>
+    </div>
+    <div class="mySlidesBones">
+      <img src="/assets/bones/b09.jpg">
+      <p class="caption">"Pelvis #2" 2013 charcoal on toned paper 18h x 24w in</p>
+    </div>
+    <div class="mySlidesBones">
+      <img src="/assets/bones/b10.jpg">
+      <p class="caption">"Skull" 2013 charcoal on toned paper 18h x 24w in<</p>
+    </div>
+    <div class="mySlidesBones">
+      <img src="/assets/bones/b11.jpg">
+      <p class="caption">"Bones of Torso" 2013 charcoal on toned paper 18h x 24w in<</p>
+    </div>
+    <div class="mySlidesBones">
+      <img src="/assets/bones/b12.jpg">
+      <p class="caption">"Spine" 2013 charcoal on toned paper 18h x 24w in<</p>
+    </div>
+
+
+
+  <!-- Bones and Muscles thumbnails at bottom of open Modal -->
+    <div class="rowDemoBones">
+      <div class="column">
+        <img class="demo cursor" src="/assets/bones/b01.jpg"  style="max-height:200px"  onclick="currentSlideBones(1)" alt="01">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/bones/b02.jpg"  style="max-height:200px"  onclick="currentSlideBones(2)" alt="02">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/bones/b03.jpg"  style="max-height:200px"  onclick="currentSlideBones(3)" alt="03">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/bones/b04.jpg"  style="max-height:200px"  onclick="currentSlideBones(4)" alt="04">
+      </div>
+    </div>
+    <div class="rowDemoBones">
+      <div class="column">
+        <img class="demo cursor" src="/assets/bones/b05.jpg"  style="max-height:200px"  onclick="currentSlideBones(5)" alt="05">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/bones/b06.jpg"  style="max-height:200px"  onclick="currentSlideBones(6)" alt="06">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/bones/b07.jpg"  style="max-height:200px"  onclick="currentSlideBones(7)" alt="07">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/bones/b08.jpg"  style="max-height:200px"  onclick="currentSlideBones(8)" alt="08">
+      </div>
+    </div>
+    <div class="rowDemoBones">
+      <div class="column">
+        <img class="demo cursor" src="/assets/bones/b09.jpg"  style="max-height:200px"  onclick="currentSlideBones(9)" alt="09">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/bones/b10.jpg"  style="max-height:200px"  onclick="currentSlideBones(10)" alt="10">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/bones/b11.jpg"  style="max-height:200px"  onclick="currentSlideBones(11)" alt="11">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="/assets/bones/b12.jpg"  style="max-height:200px"  onclick="currentSlideBones(12)" alt="12">
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+
+
+
+
+<!-- ==================================================================== -->
+
+<div class="clearfix"></div>
+
+<!--div below closes containerForFooterPos -->
+</div>
+
+
+<footer>
+  <%= render 'layouts/footer' %>
+</footer>
+
+
+<!-- ==================================================================== -->
+<!-- The script that runs the modal -->
+<!-- Note: Each Work category has its own modal, so there are 5 -->
+<script>
+
+//------------------------------------------------------------//
+// Baltimore modal
+//------------------------------------------------------------//
+function openModalBaltimore(){
+  document.getElementById('myModalBaltimore').style.display = "block";
+}
+function closeModalBaltimore(){
+  document.getElementById('myModalBaltimore').style.display = "none";
+}
+
+var slideIndexBaltimore = 1;
+showSlidesBaltimore(slideIndexBaltimore);
+
+function plusSlidesBaltimore(n){
+  showSlidesBaltimore(slideIndexBaltimore += n);
+}
+
+function currentSlideBaltimore(n){
+  showSlidesBaltimore(slideIndexBaltimore = n);
+}
+
+function showSlidesBaltimore(n){
+  var i;
+  var slidesBaltimore = document.getElementsByClassName("mySlidesBaltimore");
+
+  if(n > slidesBaltimore.length){slideIndexBaltimore = 1}
+  if(n < 1){slideIndexBaltimore = slidesBaltimore.length}
+  for(i = 0; i < slidesBaltimore.length; i++){
+      slidesBaltimore[i].style.display = "none";
+  }
+  slidesBaltimore[slideIndexBaltimore-1].style.display = "block";
+}
+//------------------------------------------------------------//
+
+
+
+//------------------------------------------------------------//
+// Family modal
+//------------------------------------------------------------//
+function openModalFamily(){
+  document.getElementById('myModalFamily').style.display = "block";
+}
+function closeModalFamily(){
+  document.getElementById('myModalFamily').style.display = "none";
+}
+var slideIndexFamily = 1;
+showSlidesFamily(slideIndexFamily);
+
+function plusSlidesFamily(n){
+  showSlidesFamily(slideIndexFamily += n);
+}
+
+function currentSlideFamily(n){
+  showSlidesFamily(slideIndexFamily = n);
+}
+
+function showSlidesFamily(n){
+  var i;
+  var slidesFamily = document.getElementsByClassName("mySlidesFamily");
+
+  if(n > slidesFamily.length){slideIndexFamily = 1}
+  if(n < 1){slideIndexFamily = slidesFamily.length}
+  for(i = 0; i < slidesFamily.length; i++){
+      slidesFamily[i].style.display = "none";
+  }
+  slidesFamily[slideIndexFamily-1].style.display = "block";
+}
+//------------------------------------------------------------//
+
+
+//------------------------------------------------------------//
+// Boston modal
+//------------------------------------------------------------//
+function openModalBoston(){
+  document.getElementById('myModalBoston').style.display = "block";
+}
+function closeModalBoston(){
+  document.getElementById('myModalBoston').style.display = "none";
+}
+var slideIndexBoston = 1;
+showSlidesBoston(slideIndexBoston);
+
+function plusSlidesBoston(n){
+  showSlidesBoston(slideIndexBoston += n);
+}
+
+function currentSlideBoston(n){
+  showSlidesBoston(slideIndexBoston = n);
+}
+
+function showSlidesBoston(n){
+  var i;
+  var slides = document.getElementsByClassName("mySlidesBoston");
+
+  if(n > slides.length){slideIndexBoston = 1}
+  if(n < 1){slideIndexBoston = slides.length}
+  for(i = 0; i < slides.length; i++){
+      slides[i].style.display = "none";
+  }
+  slides[slideIndexBoston-1].style.display = "block";
+}
+//------------------------------------------------------------//
+
+
+//------------------------------------------------------------//
+// Books modal
+//------------------------------------------------------------//
+function openModalBooks(){
+  document.getElementById('myModalBooks').style.display = "block";
+}
+function closeModalBooks(){
+  document.getElementById('myModalBooks').style.display = "none";
+}
+var slideIndexBooks = 1;
+showSlidesBooks(slideIndexBooks);
+
+function plusSlidesBooks(n){
+  showSlidesBooks(slideIndexBooks += n);
+}
+
+function currentSlideBooks(n){
+  showSlidesBooks(slideIndexBooks = n);
+}
+
+function showSlidesBooks(n){
+  var i;
+  var slides = document.getElementsByClassName("mySlidesBooks");
+
+  if(n > slides.length){slideIndexBooks = 1}
+  if(n < 1){slideIndexBooks = slides.length}
+  for(i = 0; i < slides.length; i++){
+      slides[i].style.display = "none";
+  }
+  slides[slideIndexBooks-1].style.display = "block";
+}
+//------------------------------------------------------------//
+
+
+//------------------------------------------------------------//
+// Studies modal
+//------------------------------------------------------------//
+function openModalStudies(){
+  document.getElementById('myModalStudies').style.display = "block";
+}
+function closeModalStudies(){
+  document.getElementById('myModalStudies').style.display = "none";
+}
+var slideIndexStudies = 1;
+showSlidesStudies(slideIndexStudies);
+
+function plusSlidesStudies(n){
+  showSlidesStudies(slideIndexStudies += n);
+}
+
+function currentSlideStudies(n){
+  showSlidesStudies(slideIndexStudies = n);
+}
+
+function showSlidesStudies(n){
+  var i;
+  var slides = document.getElementsByClassName("mySlidesStudies");
+
+  if(n > slides.length){slideIndexStudies = 1}
+  if(n < 1){slideIndexStudies = slides.length}
+  for(i = 0; i < slides.length; i++){
+      slides[i].style.display = "none";
+  }
+  slides[slideIndexStudies-1].style.display = "block";
+}
+//------------------------------------------------------------//
+
+
+//------------------------------------------------------------//
+// Bones and Muscles modal
+//------------------------------------------------------------//
+function openModalBones(){
+  document.getElementById('myModalBones').style.display = "block";
+}
+function closeModalBones(){
+  document.getElementById('myModalBones').style.display = "none";
+}
+var slideIndexBones = 1;
+showSlidesBones(slideIndexBones);
+
+function plusSlidesBones(n){
+  showSlidesBones(slideIndexBones += n);
+}
+
+function currentSlideBones(n){
+  showSlidesBones(slideIndexBones = n);
+}
+
+function showSlidesBones(n){
+  var i;
+  var slidesBones = document.getElementsByClassName("mySlidesBones");
+
+  if(n > slidesBones.length){slideIndexBones = 1}
+  if(n < 1){slideIndexBones = slidesBones.length}
+  for(i = 0; i < slidesBones.length; i++){
+      slidesBones[i].style.display = "none";
+  }
+  slidesBones[slideIndexBones-1].style.display = "block";
+}
+//------------------------------------------------------------//
+
+</script>
+
+
+
+
+</body>
+
+</html>

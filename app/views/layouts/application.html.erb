@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Courtney Dutra Yoga</title>
+    <%= csrf_meta_tags %>
+    <%= favicon_link_tag('favicon.png') %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+<div class="containerForFooterPos">
+
+    <!-- Navigation bar formatting begins here-->
+  <div id="navbarUltimateWrapper">
+    <div id="navbarWrapper">
+      <ul class="navUL">
+
+        <li class="navLi extraSpace"><a href="/landing_page/index" id="navicon">
+          <div id="logoWrapper">
+            <%= image_tag('yogo3.png', :id => 'yogaicon') %>
+          </div>
+        </a></li>
+
+
+        <li class="navLi navbutton firstnavbutton navText artNav"><a href="/art/work" class="navText">Art</a>
+          <div class="dropdownColumn ddArt">
+            <div class="dropdownbox dropdownText"><a href="/art/work" class="dropdownText">Work</a></div>
+            <div class="dropdownbox dropdownText"><a href="/art/biography" class="dropdownText">Bio</a></div>
+            <div class="dropdownbox dropdownText"><a href="/contacts/new" class="dropdownText">Contact</a></div>
+          </div>
+        </li>
+
+
+        <li class="navLi navbutton navText yogaNav"><a href="/yoga/schedule" class="navText">Yoga</a>
+          <div class="dropdownColumn ddYoga">
+            <div class="dropdownbox dropdownText ddRight"><a href="/yoga/schedule" class="dropdownText">Schedule</a></div>
+            <div class="dropdownbox dropdownText ddRight"><a href="/yoga/about" class="dropdownText">About</a></div>
+            <div class="dropdownbox dropdownText ddRight"><a href="/contacts/new" class="dropdownText">Contact</a></div>
+          </div>
+        </li>
+
+        <li class="mobile-navLi">
+          <button onclick="clickTheBurger()" class="burgerButton">
+          <%= image_tag('hamburgericon.png', :id => 'hamburger') %>
+         </button>
+          <div class="hamburgerDD">
+            <div class="dropdownbox dropdownText mobileDD"><a href="/landing_page/index" class="dropdownText">Home</a></div>
+            <div class="dropdownbox dropdownText mobileDD"><a href="/art/work" class="dropdownText">Art Work</a></div>
+            <div class="dropdownbox dropdownText mobileDD"><a href="/art/biography" class="dropdownText">Art Bio</a></div>
+            <div class="dropdownbox dropdownText mobileDD"><a href="/yoga/schedule" class="dropdownText">Yoga Schedule</a></div>
+            <div class="dropdownbox dropdownText mobileDD"><a href="/yoga/about" class="dropdownText">Yoga About</a></div>
+            <div class="dropdownbox dropdownText mobileDD"><a href="/contacts/new" class="dropdownText">Contact</a></div>
+          </div>
+        </li>
+
+
+      </ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+    <%= yield %>
+
+
+  </div>
+
+<!--
+  <footer>
+    <%= render 'layouts/footer' %>
+  </footer>
+-->
+
+
+<script>
+
+  function clickTheBurger(){
+    var hamburgerDD = document.getElementsByClassName("hamburgerDD");
+    if (hamburgerDD[0].style.display === "none") {
+      hamburgerDD[0].style.display = "block";
+    } else {
+        hamburgerDD[0].style.display = "none";
+      }
+  }
+</script>
+
+
+
+  </body>
+
+
+
+
+</html>

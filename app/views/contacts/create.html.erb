@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+
+<!-- to create a flash message -->
+  <div>
+    <% flash.each do |key, value| %>
+      <div>
+        <a href="#" data-dismiss="alert">×</a>
+          <%= value %>
+      </div>
+    <% end %>
+  </div>
+
+
+</body>
+</html>

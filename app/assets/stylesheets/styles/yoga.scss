@@ -1,0 +1,173 @@
+// Place all the styles related to the Yoga controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+#yogaaboutbody{
+  min-width: 480px;
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+#yogaschedulebody{
+  max-height: 1080px;
+  max-width: 1920px;
+  min-width: 480px;
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+#piccontainerindex{
+  margin-left: 10%;
+  width: 80%;
+}
+#aboutpageTopspace{
+  margin-top: 5%;
+}
+#mainpic{
+  width: 100%;
+}
+#aboutpic{
+  width: 25%;
+  float: left;
+  margin-right: 6%;
+}
+#side{
+ background-color: lightgreen;
+}
+#middle{
+  background-color: lightyellow;
+}
+.cols{
+  float: left;
+}
+#colskimain{
+  background-color: white;
+  width: 70%;
+  margin-left: 15%;
+}
+#bioContent{
+  text-indent: 20px;
+  margin-top: 2%;
+  margin-right: 30%;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 20px;
+}
+.colskiside{
+  width: 15%;
+}
+#leftcols{
+  background-color: pink;
+  margin-left: 0%;
+}
+#rightcols{
+  background-color: red;
+}
+
+
+/* Formatting for Yoga Schedule page starts here*/
+
+.ycol {
+  display: block;
+  float: left;
+}
+#yogaCol-Wrapper {
+  width: 100%;
+  margin-top: 2%;
+}
+#yogaCol-Left {
+   width: 30%;
+   margin-left: 20%;
+}
+
+#yogaCol-Right {
+  width: 30%;
+  margin-left: 0;
+  padding-left: 2%;
+  text-align: center;
+}
+#courtpic-wrapper {
+
+}
+#c1pic{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.yogaScheduleTable {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+ /* Formatting for Weekly Schedule */
+.weekly-schedule-header{
+  margin-left: 5%;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  padding-top: 2%;
+  padding-bottom: 0%;
+}
+.studio-header{
+  text-align: center;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 7%;
+  padding-bottom: 3%;
+}
+.class-time{
+  text-align: center;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+@media only screen and (max-width: 700px){
+  /*----Formatting for Yoga Schedule page on mobile-----*/
+  #yogaschedulebody {
+    position: absolute;
+  }
+  .ycol {
+    float: none;
+  }
+  #yogaCol-Wrapper {
+    width: 100%;
+    margin-top: 2%;
+  }
+  #yogaCol-Left {
+     width: 30%;
+     margin-left: 35%;
+     margin-bottom: 2%;
+  }
+
+  #yogaCol-Right {
+    width: 30%;
+    margin-left: 35%;
+    padding-top: 2%;
+    text-align: center;
+  }
+  #c1pic{
+    width: 100%;
+  }
+    /*----Formatting for Yoga About page on mobile-----*/
+  #yogaaboutbody {
+      position: absolute;
+  }
+  #colskimain {
+    padding-bottom: 10%;
+  }
+  #aboutpic {
+    float: none;
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4%;
+  }
+}

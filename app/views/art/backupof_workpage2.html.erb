@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<!-- THIS IS JUST A TEMPORARY BACKUP FILE IN CASE I MESS UP
+ THIS MONSTER PROJECT TO GET THE MODAL UP AND RUNNING WITH ALL
+ 62 IMAGES -->
+
+
+
+
+
+
+
+
+
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Work</title>
+</head>
+
+<body id="work-body">
+<!--
+<div id="galleryWrapper">
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="/assets/artlanding2.jpg">
+        <img src="/assets/artlanding2.jpg" alt="Baltimore">
+      </a>
+      <div class="desc">Baltimore</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="/assets/art-cover-family.png">
+        <img src="/assets/art-cover-family.png" alt="Family">
+      </a>
+      <div class="desc">Family</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="/assets/art-cover-boston.png">
+        <img src="/assets/art-cover-boston.png" alt="Boston">
+      </a>
+      <div class="desc">Boston</div>
+    </div>
+  </div>
+
+  <div class="clearfix"></div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="/assets/art-cover-books.png">
+        <img src="/assets/art-cover-books.png" alt="Books">
+      </a>
+      <div class="desc">Books</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="/assets/art-cover-studies.png">
+        <img src="/assets/art-cover-studies.png" alt="Studies">
+      </a>
+      <div class="desc">Studies</div>
+    </div>
+  </div>
+
+  <div class="clearfix"></div>
+
+
+
+
+
+</div>
+
+-->
+
+<!-- ==================================================================== -->
+<!-- Cover photos for each Art Work Category, this is what opens
+     when you navigate to Work page -->
+<div class="row">
+  <div class="column">
+    <img src="/assets/artlanding2.jpg" style="width:100%" onclick="baltimore=true;openModal();currentSlide(1)" class="hover-shadow cursor">
+    <div class="desc">Baltimore</div>
+  </div>
+  <div class="column">
+    <img src="/assets/art-cover-family.png" style="width:100%" onclick="openModal();currentSlide(2);family=true" class="hover-shadow cursor">
+    <div class="desc">Family</div>
+  </div>
+  <div class="column">
+    <img src="/assets/art-cover-boston.png" style="width:100%" onclick="openModal();currentSlide(3);boston=true" class="hover-shadow cursor">
+    <div class="desc">Boston</div>
+  </div>
+    <!-- clearfix class creates a clear and begins next content on new row -->
+    <div class="clearfix"></div>
+
+  <div class="column">
+    <img src="/assets/art-cover-books.png" style="width:100%" onclick="openModal();currentSlide(4);books=true" class="hover-shadow cursor">
+    <div class="desc">Books</div>
+  </div>
+  <div class="column">
+    <img src="/assets/art-cover-studies.png" style="width:100%" onclick="openModal();currentSlide(5);studies=true" class="hover-shadow cursor">
+    <div class="desc">Studies</div>
+  </div>
+</div>
+
+<!-- ==================================================================== -->
+<!-- When you click on one of the Work category images, the modal
+     opens. This code is each image, as appears when it is the
+     main pic viewed in the modal -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+<!-- Baltimore Gallery -->
+  <a class="baltimore" style="display:none">
+    <div class="mySlidesBaltimore">
+      <img src="/assets/baltimore/bal01.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBaltimore">
+      <img src="/assets/baltimore/bal02.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBaltimore">
+      <img src="/assets/baltimore/bal03.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBaltimore">
+      <img src="/assets/baltimore/bal04.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBaltimore">
+      <img src="/assets/baltimore/bal05.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBaltimore">
+      <img src="/assets/baltimore/bal06.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  </a>
+
+<!-- Family Gallery -->
+  <a class="family" style="display:none">
+    <div class="mySlidesFamily">
+      <img src="/assets/family/fam01.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesFamily">
+      <img src="/assets/family/fam02.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  </a>
+
+<!-- Boston Gallery -->
+  <a class="boston" style="display:none">
+    <div class="mySlidesBoston">
+      <img src="/assets/boston/bos01.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBoston">
+      <img src="/assets/boston/bos02.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBoston">
+      <img src="/assets/boston/bos03.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBoston">
+      <img src="/assets/boston/bos04.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBoston">
+      <img src="/assets/boston/bos05.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBoston">
+      <img src="/assets/boston/bos06.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBoston">
+      <img src="/assets/boston/bos07.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBoston">
+      <img src="/assets/boston/bos08.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBoston">
+      <img src="/assets/boston/bos09.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBoston">
+      <img src="/assets/boston/bos10.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  </a>
+
+<!-- Books Gallery -->
+  <a class="books" style="display:none">
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk01.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk02.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk03.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk04.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk05.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk06.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk07.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk08.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk09.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk10.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk11.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk12.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk13.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk14.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk15.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk16.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk17.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk18.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk19.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlidesBooks">
+      <img src="/assets/books/bk20.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  </a>
+
+<!-- Studies Gallery -->
+    <a class="studies" style="display:none">
+      <div class="mySlidesStudies">
+        <img src="/assets/studies/s01.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlidesStudies">
+        <img src="/assets/studies/s02.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlidesStudies">
+        <img src="/assets/studies/s03.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlidesStudies">
+        <img src="/assets/studies/s04.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlidesStudies">
+        <img src="/assets/studies/s05.png" style="width:100%">
+      </div>
+
+      <div class="mySlidesStudies">
+        <img src="/assets/studies/s06.png" style="width:100%">
+      </div>
+
+      <div class="mySlidesStudies">
+        <img src="/assets/studies/bones/b01.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlidesStudies">
+        <img src="/assets/studies/bones/b02.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlidesStudies">
+        <img src="/assets/studies/bones/b03.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlidesStudies">
+        <img src="/assets/studies/bones/b04.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlidesStudies">
+        <img src="/assets/studies/bones/b05.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlidesStudies">
+        <img src="/assets/studies/bones/b06.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlidesStudies">
+        <img src="/assets/studies/bones/b07.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlidesStudies">
+        <img src="/assets/studies/bones/b08.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlidesStudies">
+        <img src="/assets/studies/bones/b09.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlidesStudies">
+        <img src="/assets/studies/bones/b10.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlidesStudies">
+        <img src="/assets/studies/bones/b11.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlidesStudies">
+        <img src="/assets/studies/bones/b12.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlidesStudies">
+        <img src="/assets/studies/gym/g01.jpeg" style="width:100%">
+      </div>
+
+      <div class="mySlidesStudies">
+        <img src="/assets/studies/gym/g02.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlidesStudies">
+        <img src="/assets/studies/gym/g03.jpg" style="width:100%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    </a>
+
+
+
+<!-- ==================================================================== -->
+    <!-- When you click on one of the Work category images, the modal
+         opens. This code is each image, as appears when it is one of
+         the small thumbnail pics at the bottom of the modal -->
+
+<!-- Baltimore thumbnails at bottom of open Modal -->
+  <a class="baltimore" style="display:none">
+    <div class="column">
+      <img class="demo cursor" src="/assets/baltimore/bal01.jpg" style="width:100%" onclick="currentSlide(1)" alt="01">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/baltimore/bal02.jpg" style="width:100%" onclick="currentSlide(2)" alt="02">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/baltimore/bal03.jpg" style="width:100%" onclick="currentSlide(3)" alt="03">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/baltimore/bal04.jpg" style="width:100%" onclick="currentSlide(4)" alt="04">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/baltimore/bal05.jpg" style="width:100%" onclick="currentSlide(5)" alt="05">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/baltimore/bal06.jpg" style="width:100%" onclick="currentSlide(6)" alt="06">
+    </div>
+  </a>
+
+<!-- Family thumbnails at bottom of open Modal -->
+  <a class="family" style="display:none">
+    <div class="column">
+      <img class="demo cursor" src="/assets/family/fam01.jpg" style="width:100%" onclick="currentSlide(1)" alt="01">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/family/fam02.jpg" style="width:100%" onclick="currentSlide(2)" alt="02">
+    </div>
+  </a>
+
+<!-- Boston thumbnails at bottom of open Modal -->
+  <a class="boston" style="display:none">
+    <div class="column">
+      <img class="demo cursor" src="/assets/boston/bos01.jpg" style="width:100%" onclick="currentSlide(1)" alt="01">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/boston/bos02.jpg" style="width:100%" onclick="currentSlide(2)" alt="02">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/boston/bos03.jpg" style="width:100%" onclick="currentSlide(3)" alt="03">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/boston/bos04.jpg" style="width:100%" onclick="currentSlide(4)" alt="04">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/boston/bos05.jpg" style="width:100%" onclick="currentSlide(5)" alt="05">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/boston/bos06.jpg" style="width:100%" onclick="currentSlide(6)" alt="06">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/boston/bos07.jpg" style="width:100%" onclick="currentSlide(7)" alt="07">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/boston/bos08.jpg" style="width:100%" onclick="currentSlide(8)" alt="08">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/boston/bos09.jpg" style="width:100%" onclick="currentSlide(9)" alt="09">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/boston/bos10.jpg" style="width:100%" onclick="currentSlide(10)" alt="10">
+    </div>
+  </a>
+
+<!-- Books thumbnails at bottom of open Modal -->
+  <a class="books" style="display:none">
+    <div class="column">
+      <img class="demo cursor" src="/assets/books/bk01.jpg" style="width:100%" onclick="currentSlide(1)" alt="01">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/books/bk02.jpg" style="width:100%" onclick="currentSlide(2)" alt="02">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/books/bk03.jpg" style="width:100%" onclick="currentSlide(3)" alt="03">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/books/bk04.jpg" style="width:100%" onclick="currentSlide(4)" alt="04">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/books/bk05.jpg" style="width:100%" onclick="currentSlide(5)" alt="05">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/books/bk06.jpg" style="width:100%" onclick="currentSlide(6)" alt="06">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/books/bk07.jpg" style="width:100%" onclick="currentSlide(7)" alt="07">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/books/bk08.jpg" style="width:100%" onclick="currentSlide(8)" alt="08">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/books/bk09.jpg" style="width:100%" onclick="currentSlide(9)" alt="09">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/books/bk10.jpg" style="width:100%" onclick="currentSlide(10)" alt="10">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/books/bk11.jpg" style="width:100%" onclick="currentSlide(1)" alt="11">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/books/bk12.jpg" style="width:100%" onclick="currentSlide(2)" alt="12">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/books/bk13.jpg" style="width:100%" onclick="currentSlide(3)" alt="13">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/books/bk14.jpg" style="width:100%" onclick="currentSlide(4)" alt="14">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/books/bk15.jpg" style="width:100%" onclick="currentSlide(5)" alt="15">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/books/bk16.jpg" style="width:100%" onclick="currentSlide(6)" alt="16">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/books/bk17.jpg" style="width:100%" onclick="currentSlide(7)" alt="17">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/books/bk18.jpg" style="width:100%" onclick="currentSlide(8)" alt="18">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/books/bk19.jpeg" style="width:100%" onclick="currentSlide(9)" alt="19">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/books/bk20.jpg" style="width:100%" onclick="currentSlide(10)" alt="20">
+    </div>
+  </a>
+
+
+<!-- Studies thumbnails at bottom of open Modal -->
+  <a class="studies" style="display:none">
+    <div class="column">
+      <img class="demo cursor" src="/assets/studies/s01.jpg" style="width:100%" onclick="currentSlide(1)" alt="01">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/studies/s02.jpg" style="width:100%" onclick="currentSlide(2)" alt="02">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/studies/s03.jpg" style="width:100%" onclick="currentSlide(3)" alt="03">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/studies/s04.jpg" style="width:100%" onclick="currentSlide(4)" alt="04">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/studies/s05.png" style="width:100%" onclick="currentSlide(5)" alt="05">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/studies/s06.png" style="width:100%" onclick="currentSlide(6)" alt="06">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/books/bk07.jpg" style="width:100%" onclick="currentSlide(7)" alt="07">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/studies/bones/b01.jpg" style="width:100%" onclick="currentSlide(8)" alt="08">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/studies/bones/b02.jpg" style="width:100%" onclick="currentSlide(9)" alt="09">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/studies/bones/b03.jpg" style="width:100%" onclick="currentSlide(10)" alt="10">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/studies/bones/b04.jpg" style="width:100%" onclick="currentSlide(1)" alt="11">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/studies/bones/b05.jpg" style="width:100%" onclick="currentSlide(2)" alt="12">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/studies/bones/b06.jpg" style="width:100%" onclick="currentSlide(3)" alt="13">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/studies/bones/b07.jpg" style="width:100%" onclick="currentSlide(4)" alt="14">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/studies/bones/b08.jpg" style="width:100%" onclick="currentSlide(5)" alt="15">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/studies/bones/b09.jpg" style="width:100%" onclick="currentSlide(6)" alt="16">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/studies/bones/b10.jpg" style="width:100%" onclick="currentSlide(7)" alt="17">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/studies/bones/b11.jpg" style="width:100%" onclick="currentSlide(8)" alt="18">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/studies/bones/b12.jpg" style="width:100%" onclick="currentSlide(9)" alt="19">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/studies/gym/g01.jpg" style="width:100%" onclick="currentSlide(10)" alt="20">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/studies/gym/g02.jpg" style="width:100%" onclick="currentSlide(10)" alt="21">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/studies/gym/g03.jpg" style="width:100%" onclick="currentSlide(10)" alt="22">
+    </div>
+  </a>
+<!-- ================================================================== -->
+
+  </div>
+</div>
+<!-- End Modal ========================================================== -->
+
+
+
+<!-- ==================================================================== -->
+<!-- The script that runs the modal -->
+<script>
+var baltimore = false;
+var family = false;
+var boston = false;
+var books = false;
+var studies = false;
+
+function openModal(){
+  if(baltimore==true){
+    document.getElementsByClassName('baltimore').style.display = "block";
+    slides.length = 6;
+  }
+  if(family==true){
+    document.getElementsByClassName('family').style.display = "block";
+  }
+  if(boston==true){
+    document.getElementsByClassName('boston').style.display = "block";
+  }
+  if(books==true){
+    document.getElementsByClassName('books').style.display = "block";
+  }
+  if(studies==true){
+    document.getElementsByClassName('studies').style.display = "block";
+  }
+
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal(){
+  document.getElementById('myModal').style.display = "none";
+  baltimore = false;
+  family = false;
+  boston = false;
+  books = false;
+  studies = false;
+  /*
+  document.getElementsByClassName('baltimore').style.display = "none";
+  document.getElementsByClassName('family').style.display = "none";
+  document.getElementsByClassName('boston').style.display = "none";
+  document.getElementsByClassName('books').style.display = "none";
+  document.getElementsByClassName('studies').style.display = "none"; */
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n){
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n){
+  showSlides(slideIndex = n);
+}
+
+
+function showSlides(n){
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+
+  if(baltimore==true){
+    slides = document.getElementsByClassName("mySlidesBaltimore");
+    slides.length = 6;
+  }
+  if(family==true){
+    slides = document.getElementsByClassName("mySlidesFamily");
+    slides.length = 2;
+  }
+  if(boston==true){
+    slides = document.getElementsByClassName("mySlidesBoston");
+    slides.length = 10;
+  }
+  if(books==true){
+    slides = document.getElementsByClassName("mySlidesBooks");
+    slides.length = 20;
+  }
+  if(studies==true){
+    slides = document.getElementsByClassName("mySlidesStudies");
+    slides.length = 23;
+  }
+
+  if(n > slides.length){slideIndex = 1}
+  if(n < 1){slideIndex = slides.length}
+  for(i = 0; i < slides.length; i++){
+      slides[i].style.display = "none";
+  }
+  for(i = 0; i < dots.length; i++){
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+</body>
+</html>

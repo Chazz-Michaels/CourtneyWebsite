@@ -1,0 +1,363 @@
+// Place all the styles related to the Art controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#work-body {
+  position: relative;
+  width: 100%;
+  min-width: 480px;
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+#artbio-body{
+  min-width: 480px;
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+.row{
+  margin-top: 3%;
+  margin-left: 15%;
+  height: inherit;
+}
+.row > .maincolumn {
+  margin: 0.5%;
+  margin-right: 3%;
+}
+.desc{
+    padding: 15px;
+    text-align: center;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.maincolumn {
+  float: left;
+  max-width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 2%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: white;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  display: block;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+
+
+/* ----------------------------------------------------- */
+
+.mySlidesBaltimore {
+  background-color: white;
+  padding-top: 0;
+  padding-bottom: 5%;
+}
+.mySlidesFamily {
+  background-color: white;
+  padding-top: 0;
+  padding-bottom: 5%;
+}
+.mySlidesBoston {
+  background-color: white;
+  padding-top: 0;
+  padding-bottom: 5%;
+}
+.mySlidesBooks {
+  background-color: white;
+  padding-top: 0;
+  padding-bottom: 5%;
+}
+.mySlidesStudies {
+  background-color: white;
+  padding-top: 0;
+  padding-bottom: 5%;
+}
+.mySlidesBones {
+  background-color: white;
+  padding-top: 0;
+  padding-bottom: 5%;
+}
+
+
+/* ------------------------------------------------ */
+.mySlidesBaltimore > img{
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mySlidesFamily > img {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mySlidesBoston > img {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mySlidesBooks > img {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mySlidesStudies > img {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mySlidesBones > img {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/* ---------------------------------------------------------*/
+
+.column {
+  float: left;
+  width: 25%;
+  margin-top: 1%;
+}
+.column > img {
+  display: block;
+  width: 60%;
+  max-height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/* Format Demo Images for Baltimore category */
+.rowDemoBaltimore {
+  background-color: white;
+}
+.rowDemoBaltimore:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Format Demo Images for Family category */
+.rowDemoFamily {
+  background-color: white;
+}
+.rowDemoFamily:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Format Demo Images for Boston category */
+.rowDemoBoston {
+  background-color: white;
+}
+.rowDemoBoston:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Format Demo Images for Books category */
+.rowDemoBooks {
+  background-color: white;
+}
+.rowDemoBooks:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Format Demo Images for Studies category */
+.rowDemoStudies{
+  background-color: white;
+}
+
+.rowDemoStudies:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Format Demo Images for Bones category */
+.rowDemoBones{
+  background-color: white;
+}
+
+.rowDemoBones:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* The Close Button */
+.close {
+  // THIS IS A GREAT DARK-GRAY COLOR THAT IS NOT HARSH ON THE EYES
+  color: #27282b;
+  position: fixed;
+  padding: 0.8%;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  background-color: #27282b;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 1.4%;
+  margin-top: 15%;
+  color: #27282b;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 12%;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #27282b;
+  color: white;
+}
+
+.caption {
+  font-family: Verdana, sans-serif;
+  font-size: 0.8em;
+  font-weight: 200;
+  font-stretch: condensed;
+  padding: 2px 16px;
+  margin-top: 5%;
+  text-align: center;
+  color: #27282b;
+}
+
+.demo {
+  opacity: 0.3;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*----------------------------------------------------------------*/
+/*some Art Bio styling */
+.contactfromArtBioButton {
+  font-size: 1.2em;
+  background: linear-gradient(to bottom,#dbdbdb, #cecece, #bababa);
+
+}
+.contactformbuttonText {
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-indent: 0;
+  text-decoration: none;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 0.2%;
+  padding-bottom: 0.2%;
+  border: 0.1px black solid;
+  border-radius: 2px;
+}
+.contactformbuttonText:hover {
+  border: 0.5px black solid;
+  margin-right: -0.8px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 18px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 1200px) {
+  #work-body {
+    position: absolute;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #work-body {
+    position: absolute;
+    width: 100%;
+  }
+  #artbio-body {
+    position: absolute;
+    min-width: 480px;
+  }
+  .row {
+    margin-left: 25%;
+  }
+  .maincolumn {
+    display: block;
+    float: none;
+    margin: 0;
+    max-width: 50%;
+    margin-left: 25%;
+  }
+
+
+}

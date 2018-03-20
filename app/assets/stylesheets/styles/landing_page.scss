@@ -1,0 +1,107 @@
+// Place all the styles related to the LandingPage controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#body-landing{
+  max-width: 1920px;
+  max-height: 1080px;
+  height: 100%;
+}
+.floater {
+  display: block;
+  float: left;
+}
+.marginSpace {
+  width: 10%;
+  color: white;
+}
+.photoSpace {
+  width: 40%;
+  margin-top: 2%;
+  padding: 1%;
+}
+.col-landing{
+  display: block;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+ }
+
+#artlanding-image{
+  max-width: 500px;
+  max-height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  border: 2px black solid;
+  filter: grayscale(0.99);
+}
+#artlanding-image:hover{
+  filter: grayscale(0);
+  transition: filter .50s ease-in-out;
+  cursor: pointer;
+}
+#yogalanding-image{
+  max-width: 500px;
+  max-height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  border: 2px black solid;
+  filter: grayscale(0.9);
+}
+#yogalanding-image:hover{
+  filter: grayscale(0);
+  transition: filter .35s ease-in-out;
+  cursor: pointer;
+}
+.text-landing{
+  font-family: Verdana, Geneva, sans-serif;
+/*  font-family: Cochin, Georgia, Garamond, ‘Times New Roman’, Times, serif; */
+  text-align: center;
+  font-size: 1.6em;
+  text-decoration: none;
+  color: black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#art-land{
+  margin-left: 0%;
+}
+#yoga-land{
+  margin-left: 0%;
+}
+.floater::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (max-width: 700px) {
+  #body-landing{
+    max-width: 700px;
+    min-width: 480px;
+  }
+  .mobileclear::after {
+    content: "";
+    display: table;
+    clear: both;
+    float:none;
+  }
+  .marginSpace{
+    display: none;
+  }
+  .photoSpace{
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+}

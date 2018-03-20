@@ -1,0 +1,351 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "main.scss";
+
+ *{
+   margin: 0;
+   padding: 0;
+ }
+ body{
+   min-width: 400px;
+   min-height: 100%;
+
+ }
+ .containerForFooterPos {
+   padding-bottom: 110px;
+ }
+ #navbarUltimateWrapper {
+   border-bottom: 2.5px solid black;
+   margin-left: 10%;
+   margin-right: 10%;
+ }
+ #navbarUltimateWrapper::after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+ #navbarWrapper {
+   position: relative;
+   margin: 0px;
+   padding: 0px;
+   padding-top: 0.5%;
+   margin-left: 4%;
+   margin-bottom: 0.5%;
+
+ }
+ .navUL {
+   background-color: white;
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+   overflow: hidden;
+ }
+ .navLi {
+   display: block;
+   float: left;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+.navText {
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: 500;
+  font-stretch: semi-expanded;
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+  text-align: center;
+}
+.firstnavbutton {
+  margin-right: 2%;
+}
+ .navbutton{
+   width: 5%;
+   text-align: center;
+   padding-top: 1%;
+   padding-bottom: 1%;
+   margin-top: 22px;
+   margin-left: 2%;
+ }
+ .extraSpace {
+   margin-right: 2%;
+ }
+ #logoWrapper{
+   max-width: 280px;
+   width: 100%;
+ }
+ #yogaicon{
+   width: 105%;
+   padding: 0px;
+   margin: 0px;
+   margin-top: 5px;
+ }
+ .navText:hover{
+  font-weight: 800;
+  font-stretch: expanded;
+  cursor: pointer;
+ }
+ .navText:active{
+   font-weight: 800;
+   font-stretch: expanded;
+ }
+/* Formatting for Dropdown Boxes for ART and YOGA tabs on Nav bar */
+
+.dropdownColumn {
+  position: absolute;
+  z-index: 2;
+  float: none;
+  width: 100px;
+  background-color: white;
+  box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.2);
+}
+.ddArt {
+  display: none;
+  margin-left: 1.4%;
+}
+.ddYoga {
+  display: none;
+  margin-left: 1%;
+}
+.artNav:hover .ddArt{
+  display: block;
+}
+.yogaNav:hover .ddYoga{
+  display: block;
+}
+.dropdownbox {
+  text-align: left;
+  padding: 10%;
+  border: 1px black solid;
+}
+.dropdownText {
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: 200;
+  font-stretch: normal;
+  text-decoration: none;
+  color: black;
+  font-size: 0.8em;
+}
+.dropdownText:hover {
+  font-weight: 800;
+}
+.dropdownbox:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*Mobile Hamburger icon dropdown formatting */
+.mobile-navLi {
+  display: none;
+  float: right;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hamburgerDD {
+  z-index: 2;
+  position: absolute;
+  display: none;
+  float: right;
+  width: 100px;
+  background-color: white;
+  box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.2);
+}
+.mobileDD {
+  text-align: center;
+  padding: 12%;
+  border: 1px black solid;
+}
+.mobileDD:active {
+  font-weight: 800;
+}
+.burgerButton {
+  background-color: white;
+  border: none;
+}
+@media only screen and (max-width: 900px) {
+  .iconControl {
+    margin-top: 2.3%;
+  }
+  .iconKid {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  body{
+    min-width: 480px;
+  }
+  #navbarUltimateWrapper {
+    border-bottom: 2px solid black;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  #navbarWrapper {
+    margin-left: 0%;
+  }
+  #logoWrapper{
+
+  }
+  #yogaicon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .navText{
+    display: none;
+  }
+  .mobile-navLi{
+    display: block;
+  }
+  .footerWrapper {
+    min-width: 460px;
+    padding-top: 6%;
+  }
+  .iconControl {
+    margin-top: 5%;
+    width: 100%;
+    position: relative;
+    display: block;
+    float: none;
+  }
+  .iconKid {
+    margin-right: 0%;
+  }
+  .sigSpot {
+    width: 100%;
+    display: block;
+    position: relative;
+    float: none;
+  }
+
+}
+
+
+
+/*-----------------------------------------------------------*/
+/* Footer formatting begins here */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding-top: 2%;
+  padding-bottom: 0%;
+  width: 100%;
+  height: 110px;
+  background-color: #dcdfe2;
+}
+.footerWrapper {
+
+  position: absolute;
+  bottom: 0;
+  padding-top: 2%;
+  padding-bottom: 0%;
+  display: block;
+  max-width: inherit;
+  width: 100%;
+  height: 110px;
+  background-color: #dcdfe2;
+}
+
+.navlistControl {
+  width: 100%;
+  text-align: center;
+}
+
+
+.sigSpot {
+  display: block;
+  position: absolute;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.iconControl{
+  width: 100%;
+  position: absolute;
+}
+.iconKid {
+  display: inline-block;
+  float: right;
+  margin-right: 15%;
+}
+
+.footerNav {
+  background-color: #dcdfe2;
+  display: inline-block;
+}
+.footerText {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  font-stretch: condensed;
+  color: black;
+  text-decoration: none;
+}
+
+.signatureText {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  font-stretch: extra-condensed;
+  color: black;
+  text-align: center;
+}
+
+
+.fa {
+  display: block;
+  padding: 0.6em;
+  padding-right: 0.8em;
+  font-size: 1em;
+  width: 20%;
+  text-align: center;
+  text-decoration: none;
+  margin: 0%;
+  border-radius: 5%;
+  transition: background .35s ease-in-out;
+}
+
+.fa:hover {
+    background-color: white;
+    color: black;
+    border: 0.1px black solid;
+}
+.fa-etsy {
+  /*background: #d5641c;*/
+  background-color: black;
+  color: white;
+}
+.fa-linkedin {
+  /*background: #007bb5;*/
+  background-color: black;
+  color: white;
+}
+.fa-facebook {
+  /*background: #3B5998;*/
+  background-color: black;
+  color: white;
+  padding-right: 0.6em;
+}
+.fa-instagram {
+  /*background: #125688;*/
+  background-color: black;
+  color: white;
+  padding-right: 1.4em;
+}

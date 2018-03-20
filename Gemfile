@@ -10,7 +10,7 @@ end
 gem 'rails', '~> 5.1.5'
 
 
-
+gem 'rails_12factor', group: :production
 
 
 

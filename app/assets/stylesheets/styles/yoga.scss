@@ -129,7 +129,8 @@
 @media only screen and (max-width: 1080px){
   /*----Formatting for Yoga Schedule page on mobile-----*/
   #yogaschedulebody {
-    /*position: absolute;*/
+    position: absolute;
+    width: 100%;
   }
   .ycol {
     float: none;

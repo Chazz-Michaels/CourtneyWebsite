@@ -108,7 +108,7 @@
   position: absolute;
   z-index: 2;
   float: none;
-  width: 100px;
+  width: 150px;
   background-color: white;
   box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.2);
 }
@@ -137,7 +137,7 @@
   font-stretch: normal;
   text-decoration: none;
   color: black;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 .dropdownText:hover {
   font-weight: 800;
@@ -160,14 +160,15 @@
   position: absolute;
   display: none;
   float: right;
-  width: 100px;
+  width: 150px;
   background-color: white;
   box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.2);
 }
 .mobileDD {
   text-align: center;
-  padding: 12%;
-  border: 1px black solid;
+  padding: 20%;
+  border: 2px black solid;
+  border-top: 1px black solid;
 }
 .mobileDD:active {
   font-weight: 800;
@@ -176,16 +177,7 @@
   background-color: white;
   border: none;
 }
-/*
-@media only screen and (max-width: 900px) {
-  .iconControl {
-    margin-top: 2.3%;
-  }
-  .iconKid {
-    margin-right: 0;
-  }
-}
-*/
+
 @media only screen and (max-width: 1080px) {
   body{
     min-width: 480px;

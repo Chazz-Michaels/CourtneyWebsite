@@ -1,4 +1,5 @@
 class ContactsController < ApplicationController
+  # encoding: utf-8
   def new
     @contact = Contact.new
   end
@@ -14,4 +15,3 @@ class ContactsController < ApplicationController
     end
   end
 end
- 

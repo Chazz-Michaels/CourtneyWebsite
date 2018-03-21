@@ -137,9 +137,9 @@
   font-stretch: normal;
   text-decoration: none;
   color: black;
-  font-size: 1em;
+  font-size: 1.2em;
 }
-.dropdownText:hover {
+.dropdownText:hover { 
   font-weight: 800;
 }
 .dropdownbox:after {

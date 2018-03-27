@@ -128,7 +128,7 @@
 }
 .dropdownbox {
   text-align: left;
-  padding: 10%;
+  padding: 4%;
   border: 1px black solid;
 }
 .dropdownText {
@@ -137,9 +137,9 @@
   font-stretch: normal;
   text-decoration: none;
   color: black;
-  font-size: 1.2em;
+  font-size: 1em;
 }
-.dropdownText:hover { 
+.dropdownText:hover {
   font-weight: 800;
 }
 .dropdownbox:after {

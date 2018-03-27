@@ -30,11 +30,11 @@
       <p id="contact-me-header">Contact Me:</p>
 
       <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
-        <%= f.input :name, :required => false, input_html: { class: 'f-input' }, label_html: { class: 'f-label-name' } %>
+        <%= f.input :name, :required => true, input_html: { class: 'f-input' }, label_html: { class: 'f-label-name' } %>
         </br>
-        <%= f.input :email, :required => false, input_html: { class: 'f-input' }, label_html: { class: 'f-label-email' } %>
+        <%= f.input :email, :required => true, input_html: { class: 'f-input' }, label_html: { class: 'f-label-email' } %>
         </br>
-        <%= f.input :message, :as => :text, :required => false, input_html: { class: 'f-input-message' }, label_html: { class: 'f-label-message' } %>
+        <%= f.input :message, :as => :text, :required => true, input_html: { class: 'f-input-message' }, label_html: { class: 'f-label-message' } %>
         </br>
 
         <div class= "hidden-form">

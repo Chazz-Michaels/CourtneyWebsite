@@ -4,7 +4,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new
     if
       Contact.new(params[:contact]).deliver
-      redirect_to '/contacts/new', :alert => ["Yeah!"]
+      redirect_to '/contacts/new'
     end
   else
 
@@ -16,6 +16,7 @@ class ContactsController < ApplicationController
     if
     @contact.valid?
       @contact.deliver
+      flash.now[:notice] = 'Thank you for your message. We will contact you soon!'
     end
       #flash.now[:notice] = 'Thank you for your message. We will contact you soon!'
     else
@@ -23,4 +24,3 @@ class ContactsController < ApplicationController
       render :new
     end
   end
-end
